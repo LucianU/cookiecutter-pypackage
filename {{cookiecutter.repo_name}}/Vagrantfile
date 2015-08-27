@@ -1,0 +1,31 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.hostname = "{{ cookiecutter.repo_name }}"
+  config.vm.network :private_network, type: "dhcp"
+  config.vm.provider :virtualbox do |vb|
+    vb.customize ["modifyvm", :id, "--name", "{{ cookiecutter.repo_name }}",
+                  "--memory", "1024"]
+  end
+
+  config.ssh.private_key_path = [
+      "~/.vagrant.d/insecure_private_key",
+      "{{ cookiecutter.ssh_private_key_path }}"
+  ]
+  config.ssh.insert_key = false
+  config.ssh.forward_agent = true
+
+  # Ansible provisioner.
+  config.vm.provision "ansible" do |ansible|
+    ansible.groups = {
+        "development" => ["default"]
+    }
+    ansible.playbook = "ansible/development.yml"
+    ansible.host_key_checking = false
+    ansible.raw_arguments = ["--timeout=100"]
+  end
+end

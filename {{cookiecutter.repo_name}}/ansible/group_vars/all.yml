@@ -1,0 +1,2 @@
+---
+secure_deployment_user: "{{ cookiecutter.deployment_user }}"

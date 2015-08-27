@@ -1,0 +1,4 @@
+---
+ENV: development
+
+secure_deployment_user: vagrant
