@@ -2,7 +2,11 @@
 cookiecutter-pypackage
 ======================
 
-Cookiecutter template for a Python package. See https://github.com/audreyr/cookiecutter.
+Cookiecutter template for a Python package. See
+https://github.com/audreyr/cookiecutter.  Fork of
+http://github.com/Nekroze/cookiecutter-pypackage. This fork adds Vagrant and
+Ansible setup.
+
 
 * Free software: BSD license
 * Ansible_ setup: Provides setup for development, staging and production
@@ -38,6 +42,7 @@ Similar Cookiecutter Templates
 
 * `audreyr/cookiecutter-pypackage`_: The original pypackage, uses unittest
 for testing and other minor changes.
+* `Nekroze/cookiecutter-pypackage`_: The origin of this fork.
 
 Fork This
 ~~~~~~~~~
@@ -58,7 +63,8 @@ make my own packaging experience better.
 .. _Tox: http://testrun.org/tox/
 .. _Sphinx: http://sphinx-doc.org/
 .. _ReadTheDocs: https://readthedocs.org/
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/Nekroze/cookiecutter-pypackage
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+.. _`Nekroze/cookiecutter-pypackage`: https://github.com/Nekroze/cookiecutter-pypackage
 .. _Pytest: http://pytest.org/
 .. _PyPy: http://pypy.org/
 .. _Wheel: http://pythonwheels.com/
