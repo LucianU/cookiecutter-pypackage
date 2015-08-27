@@ -5,10 +5,12 @@ cookiecutter-pypackage
 Cookiecutter template for a Python package. See https://github.com/audreyr/cookiecutter.
 
 * Free software: BSD license
+* Ansible_ setup: Provides setup for development, staging and production
 * Pytest_ runner: Supports `unittest`, `pytest`, `nose` style tests and more
 * Travis-CI_: Ready for Travis Continuous integration testing
 * Tox_ testing: Setup to easily test for python 2.6, 2.7, 3.3 and PyPy_
 * Sphinx_ docs: Documentation raedy for generation with, for example, ReadTheDocs_
+* Vagrant_ setup: Easy to use development environment
 * Wheel_ support: Use the newest python package distribution standard from the get go
 
 Usage
@@ -59,4 +61,6 @@ make my own packaging experience better.
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/Nekroze/cookiecutter-pypackage
 .. _Pytest: http://pytest.org/
 .. _PyPy: http://pypy.org/
-.. _Wheel: http://pythonwheels.com
+.. _Wheel: http://pythonwheels.com/
+.. _Ansible: http://www.ansible.com/
+.. _Vagrant: https://www.vagrant.com/
