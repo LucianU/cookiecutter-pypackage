@@ -2,10 +2,24 @@
     "full_name": "Lucian Ursu",
     "email": "lucian.ursu@gmail.com",
     "github_username": "LucianU",
+    "deployment_user": null,
+    "ssh_private_key_path": "~/.ssh/id_rsa",
     "project_name": "pug",
     "repo_name": "pug",
     "project_short_description": "This one might just change the world",
     "release_date": "2015-08-27",
     "year": "2015",
-    "version": "0.1.0"
+    "version": "0.1.0",
+    "_copy_without_render": [
+        "*ansible/development.yml",
+        "*ansible/production.yml",
+        "*ansible/staging.yml",
+        "*ansible/secure.yml",
+        "*ansible/host_vars",
+        "*ansible/inventory",
+        "*ansible/roles",
+        "*ansible/group_vars/development.yml",
+        "*ansible/group_vars/production.yml",
+        "*ansible/group_vars/staging.yml"
+    ]
 }
