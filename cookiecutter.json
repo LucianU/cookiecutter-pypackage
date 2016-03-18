@@ -6,6 +6,7 @@
     "ssh_private_key_path": "~/.ssh/id_rsa",
     "project_name": "pug",
     "repo_name": "pug",
+    "repo_url": null,
     "project_short_description": "This one might just change the world",
     "release_date": "2015-08-27",
     "year": "2015",
